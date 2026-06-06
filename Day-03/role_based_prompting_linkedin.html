@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Role-Based Prompting — LinkedIn Post</title>
+<style>
+  body { margin: 0; background: #1a1a1a; display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Georgia, serif; }
+  .canvas { width: 1080px; height: 1080px; position: relative; flex-shrink: 0; }
+  svg { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<div class="canvas">
+<svg viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+  <title>Role-Based Prompting — ABTalks 60-Day Claude AI Mastery Challenge</title>
+  <desc>LinkedIn post showing role-based prompting concept with persona cards and a without/with comparison.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background: warm cream -->
+  <rect width="680" height="680" fill="#F5F0E8"/>
+
+  <!-- Top decorative band -->
+  <rect x="0" y="0" width="680" height="6" fill="#8B6B47"/>
+
+  <!-- Corner accent top-right -->
+  <rect x="590" y="6" width="90" height="80" fill="#D4B896" opacity="0.4"/>
+  <rect x="630" y="6" width="50" height="40" fill="#8B6B47" opacity="0.15"/>
+
+  <!-- ABTalks badge top-left -->
+  <rect x="32" y="20" width="220" height="28" rx="14" fill="#8B6B47"/>
+  <text x="142" y="39" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="600" fill="#F5F0E8" letter-spacing="0.8">ABTalks · 60-Day Claude AI Challenge</text>
+
+  <!-- Main Title Block -->
+  <text x="340" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#3D2B1A" letter-spacing="-1">Role-Based</text>
+  <text x="340" y="158" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#8B6B47" letter-spacing="-1">Prompting</text>
+
+  <!-- Divider line -->
+  <line x1="180" y1="174" x2="500" y2="174" stroke="#C4A882" stroke-width="1.5"/>
+  <circle cx="340" cy="174" r="4" fill="#8B6B47"/>
+
+  <!-- Subtitle -->
+  <text x="340" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6B4F33" font-style="italic">Turn Claude into Any Expert You Need</text>
+
+  <!-- ===== COMPARISON SECTION ===== -->
+  <!-- WITHOUT box -->
+  <rect x="32" y="222" width="290" height="136" rx="10" fill="#EDE0CF" stroke="#C4A882" stroke-width="1"/>
+  <rect x="32" y="222" width="290" height="34" rx="10" fill="#C4A882"/>
+  <rect x="32" y="242" width="290" height="14" fill="#C4A882"/>
+  <text x="177" y="245" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#3D2B1A" letter-spacing="0.5">WITHOUT Role Prompt</text>
+  <rect x="52" y="266" width="110" height="20" rx="10" fill="#B8A090" opacity="0.5"/>
+  <text x="107" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#3D2B1A">"Explain marketing"</text>
+  <line x1="177" y1="292" x2="177" y2="308" stroke="#8B6B47" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="52" y="312" width="250" height="34" rx="8" fill="#D4B896" opacity="0.6"/>
+  <text x="177" y="328" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#5C3D1E">Generic, surface-level</text>
+  <text x="177" y="344" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#5C3D1E">answer 📄</text>
+
+  <!-- Arrow between boxes -->
+  <line x1="334" y1="290" x2="348" y2="290" stroke="#8B6B47" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- WITH box -->
+  <rect x="358" y="222" width="290" height="136" rx="10" fill="#3D2B1A" stroke="#8B6B47" stroke-width="1.5"/>
+  <rect x="358" y="222" width="290" height="34" rx="10" fill="#8B6B47"/>
+  <rect x="358" y="242" width="290" height="14" fill="#8B6B47"/>
+  <text x="503" y="245" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#F5F0E8" letter-spacing="0.5">WITH Role Prompt</text>
+  <rect x="372" y="266" width="264" height="20" rx="10" fill="#5C3D1E" opacity="0.7"/>
+  <text x="503" y="280" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#F5F0E8">"Act as a CMO. Explain marketing…"</text>
+  <line x1="503" y1="292" x2="503" y2="308" stroke="#D4B896" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="378" y="312" width="250" height="34" rx="8" fill="#8B6B47" opacity="0.7"/>
+  <text x="503" y="328" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#F5F0E8">Expert-level, actionable</text>
+  <text x="503" y="344" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#F5F0E8">insight ✨</text>
+
+  <!-- ===== PERSONA CARDS SECTION ===== -->
+  <text x="340" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#8B6B47" letter-spacing="1.5" font-weight="600">ASSIGN A ROLE · GET AN EXPERT</text>
+
+  <!-- Card 1: Developer -->
+  <rect x="32" y="406" width="112" height="92" rx="10" fill="#3D2B1A" stroke="#8B6B47" stroke-width="1"/>
+  <circle cx="88" cy="432" r="16" fill="#8B6B47"/>
+  <text x="88" y="437" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5F0E8">{ }</text>
+  <text x="88" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="600" fill="#D4B896">Developer</text>
+  <text x="88" y="474" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">Clean code &amp;</text>
+  <text x="88" y="486" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">architecture</text>
+
+  <!-- Card 2: Product Manager -->
+  <rect x="154" y="406" width="112" height="92" rx="10" fill="#3D2B1A" stroke="#8B6B47" stroke-width="1"/>
+  <circle cx="210" cy="432" r="16" fill="#8B6B47"/>
+  <text x="210" y="437" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5F0E8">▣</text>
+  <text x="210" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="600" fill="#D4B896">Product Mgr</text>
+  <text x="210" y="474" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">Strategy &amp;</text>
+  <text x="210" y="486" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">roadmaps</text>
+
+  <!-- Card 3: HR Manager (center, highlighted) -->
+  <rect x="276" y="400" width="128" height="104" rx="10" fill="#8B6B47" stroke="#D4B896" stroke-width="2"/>
+  <circle cx="340" cy="430" r="18" fill="#F5F0E8"/>
+  <text x="340" y="436" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#8B6B47">♡</text>
+  <text x="340" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#F5F0E8">HR Manager</text>
+  <text x="340" y="476" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#EDE0CF">People &amp; culture</text>
+  <text x="340" y="489" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#EDE0CF">strategies</text>
+
+  <!-- Card 4: Founder -->
+  <rect x="414" y="406" width="112" height="92" rx="10" fill="#3D2B1A" stroke="#8B6B47" stroke-width="1"/>
+  <circle cx="470" cy="432" r="16" fill="#8B6B47"/>
+  <text x="470" y="437" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5F0E8">◈</text>
+  <text x="470" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="600" fill="#D4B896">Founder</text>
+  <text x="470" y="474" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">Vision &amp;</text>
+  <text x="470" y="486" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">growth lens</text>
+
+  <!-- Card 5: Marketer -->
+  <rect x="536" y="406" width="112" height="92" rx="10" fill="#3D2B1A" stroke="#8B6B47" stroke-width="1"/>
+  <circle cx="592" cy="432" r="16" fill="#8B6B47"/>
+  <text x="592" y="437" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#F5F0E8">✦</text>
+  <text x="592" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="600" fill="#D4B896">Marketer</text>
+  <text x="592" y="474" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">Campaigns &amp;</text>
+  <text x="592" y="486" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#C4A882">copy</text>
+
+  <!-- ===== 3 BENEFITS ===== -->
+  <line x1="40" y1="524" x2="640" y2="524" stroke="#C4A882" stroke-width="0.75" stroke-dasharray="4 4"/>
+
+  <!-- Benefit 1 -->
+  <rect x="32" y="534" width="194" height="90" rx="8" fill="#EDE0CF" stroke="#C4A882" stroke-width="0.5"/>
+  <rect x="32" y="534" width="194" height="4" rx="2" fill="#8B6B47"/>
+  <text x="129" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#3D2B1A">Precision</text>
+  <text x="129" y="576" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">Answers match your exact</text>
+  <text x="129" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">field and context</text>
+  <text x="129" y="610" text-anchor="middle" font-family="Georgia, serif" font-size="18">🎯</text>
+
+  <!-- Benefit 2 -->
+  <rect x="243" y="534" width="194" height="90" rx="8" fill="#EDE0CF" stroke="#C4A882" stroke-width="0.5"/>
+  <rect x="243" y="534" width="194" height="4" rx="2" fill="#8B6B47"/>
+  <text x="340" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#3D2B1A">Efficiency</text>
+  <text x="340" y="576" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">Skip the back-and-forth;</text>
+  <text x="340" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">get it right first time</text>
+  <text x="340" y="610" text-anchor="middle" font-family="Georgia, serif" font-size="18">⚡</text>
+
+  <!-- Benefit 3 -->
+  <rect x="454" y="534" width="194" height="90" rx="8" fill="#EDE0CF" stroke="#C4A882" stroke-width="0.5"/>
+  <rect x="454" y="534" width="194" height="4" rx="2" fill="#8B6B47"/>
+  <text x="551" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#3D2B1A">Versatility</text>
+  <text x="551" y="576" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">One AI, infinite expert</text>
+  <text x="551" y="590" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6B4F33">perspectives on demand</text>
+  <text x="551" y="610" text-anchor="middle" font-family="Georgia, serif" font-size="18">🔀</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="650" width="680" height="30" fill="#3D2B1A"/>
+  <text x="340" y="669" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#C4A882" letter-spacing="1">Day 07 of 60  ·  abtalks.com  ·  #ClaudeAI  #AIProductivity</text>
+
+  <!-- Bottom decorative dot row -->
+  <circle cx="40" cy="640" r="3" fill="#8B6B47" opacity="0.5"/>
+  <circle cx="56" cy="640" r="3" fill="#8B6B47" opacity="0.4"/>
+  <circle cx="72" cy="640" r="3" fill="#8B6B47" opacity="0.3"/>
+  <circle cx="608" cy="640" r="3" fill="#8B6B47" opacity="0.3"/>
+  <circle cx="624" cy="640" r="3" fill="#8B6B47" opacity="0.4"/>
+  <circle cx="640" cy="640" r="3" fill="#8B6B47" opacity="0.5"/>
+</svg>
+</div>
+</body>
+</html>
